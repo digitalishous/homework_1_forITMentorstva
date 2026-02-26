@@ -1,0 +1,107 @@
+html
+{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: "Titillium Web";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    color: #426815;
+}
+
+@font-face {
+    font-family: "Titillium Web";
+    src: url(/assets/fonts/titilium_web/TitilliumWeb-ExtraLight.ttf);
+}
+
+.grid-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+header{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1{
+    margin-bottom: 1rem;
+    font-size: clamp(1.4rem, 6vw, 2.8rem);
+    letter-spacing: 0.5rem;
+}
+
+h2{
+    font-size: clamp(1.1rem, 3vw, 1.4rem);
+}
+
+img{
+    display: block;
+    width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    border: 2px solid;
+    border-image-source: linear-gradient(
+    to right, 
+    #2077a0 0% 15%, 
+    #7c401d 15% 86.6%, 
+    #426815 86.6% 100%
+  );
+    border-image-slice: 1;
+}
+
+img:hover{
+    transform: scale(1.3) rotate(360deg);
+    transition: 0.8s ease-in-out;
+    border: none;
+    border-radius: 20px;
+}
+
+body:has(img:hover) *{
+    background-color:#3F605E;
+    color: #3F605E !important;
+}
+
+body:has(img:hover){
+    background-color: #3F605E !important;
+}
+
+body:has(img:hover) img{
+    box-shadow: none;
+}
+
+
+article{
+    text-align: center;
+    font-weight: 500;
+    max-width: 80vw;
+    margin: 0 auto;
+    font-size: clamp(0.9rem, 3.7vw, 1.3rem);
+    letter-spacing: 0.25rem;
+    line-height: 1.3;
+}
+
+#blue{
+    color: #2077a0;
+}
+
+#dark-red{
+    color: #7c401d;
+}
+
+#green{
+    color: #426815;
+}
