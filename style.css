@@ -23,7 +23,7 @@ body{
 
 @font-face {
     font-family: "Titillium Web";
-    src: url(assets/fonts/titilium_web/TitilliumWeb-ExtraLight.ttf);
+    src: url(assets/fonts/titillium_web/TitilliumWeb-ExtraLight.ttf);
 }
 
 .grid-wrapper{
@@ -46,6 +46,7 @@ h1{
 
 h2{
     font-size: clamp(1.1rem, 3vw, 1.4rem);
+    letter-spacing: 0.5rem;
 }
 
 img{
